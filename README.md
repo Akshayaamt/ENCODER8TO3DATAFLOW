@@ -35,45 +35,45 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
-1.Type the program in Quartus software.
-2.Compile and run the program.
-3.Generate the RTL schematic and save the logic diagram.
-4.Create nodes for inputs and outputs to generate the timing diagram.
-5.For different input combinations generate the timing diagram.
 
 /* write all the steps invloved */
 
 **PROGRAM**
+
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by:D.VARSHINI
-RegisterNumber:212223230234
-module encoder83 (a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
-input d0,d1,d2,d3,d4,d5,d6,d7;
-output a0,a1,a2;
-assign a0 = d1|d3|d5|d7;
-assign a1 = d2|d3|d6|d7;c
-assign a2 = d4|d5|d6|d7;
+Developed by:IRFAN KHAN.N
+
+RegisterNumber:212224230097
+*/
+
+module enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+
+input y0,y1,y2,y3,y4,y5,y6,y7;
+
+output a,b,c
+
+assign a= ( y4 | y5 | y6 | y7);
+
+assign b= ( y2 | y3 | y6 | y7);
+
+assign c= ( y1 | y3 | y5 | y7);
+
 endmodule
 
-*/
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-Developed by: AKSHAYAA.M.T RegisterNumber: 212223110002
-*/
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
-![WhatsApp Image 2024-04-04 at 16 19 24_c10eb858](https://github.com/Akshayaamt/ENCODER8TO3DATAFLOW/assets/144870472/1ad56179-656b-4e5e-aa9a-0574db770ba7)
+
+![Screenshot 2024-11-25 132020](https://github.com/user-attachments/assets/4a77680c-9d91-4796-9aa8-4eabe2be70be)
 
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-![WhatsApp Image 2024-04-04 at 16 19 24_80e16007](https://github.com/Akshayaamt/ENCODER8TO3DATAFLOW/assets/144870472/404aa95e-5d5c-41aa-bd33-8c749d058286)
+
+
+![Screenshot 2024-11-25 132538](https://github.com/user-attachments/assets/953e0aa0-527c-44e7-8ef4-e226901b1a4b)
 
 
 **RESULTS**
-implementing Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables executed succesfully.
 
-
-
-
+Thus the Encoder 8 To 3 in Dataflow Modelling using verilog is implemented and their functionality using their functional tables is validated.
